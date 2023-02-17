@@ -1,0 +1,14 @@
+#!/bin/sh
+bemenu-run -H 30 \
+--fn Hack \
+-p ➤ \
+--tb '#2b373d' \
+--tf '#43696E' \
+--fb '#2b373d' \
+--ff '#BFCFFF' \
+--nb '#819499' \
+--nf '#3D5061' \
+--ab '#8FA599' \
+--af '#3D5061' \
+--hb '#3D5061' \
+--hf '#F2EAE3'

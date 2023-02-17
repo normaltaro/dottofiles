@@ -1,0 +1,70 @@
+* {
+	font-family: Roboto Mono, "Font Awesome 6 Free", "Font Awesome 6 Brands";
+	font-size: 15px;
+	border-radius: 0;
+	min-height: 20px;
+}
+
+window#waybar {
+	background-color: rgba(0, 0, 0, 0);
+	color: #ffffff;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+@keyframes bgr {
+	0%{background-color: #3D5061;}
+	50%{background-color: #819499;}
+	100%{background-color: #282C30;}
+}
+
+#workspaces button{
+	padding: 0px 5px;
+	margin-right: 5px;
+	color: #d4d4d4;
+	background:#3D5061;
+}
+
+#workspaces button:hover {
+	background: rgba(61,80,97,0.5);
+}
+
+#workspaces button.active {
+	border-bottom: 1px solid white;
+	animation: bgr 10s linear infinite alternate;
+}
+
+#workspaces button.urgent {
+	background-color: #eb4d4b;
+}
+
+#window{
+	padding: 0px 15px;
+	color: #d4d4d4;
+	animation: bgr 10s linear infinite alternate;
+}
+
+#tray,
+#clock,
+#pulseaudio,
+#disk,
+#cpu,
+#temperature,
+#memory{
+	padding: 0px 5px;
+	color: #d4d4d4;
+	background:#3D5061;
+	animation: bgr 10s linear infinite alternate;
+}
+
+
+/* Ommit Left and Right Margins */
+.modules-left > widget:first-child > #workspaces {
+	margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+	margin-right: 0;
+}
